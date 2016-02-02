@@ -8,7 +8,8 @@ The program was written in Python. The libraries used are:
 
 * OpenCV 3.1 (Use these instructions: http://docs.opencv.org/2.4/doc/tutorials/introduction/linux_install/linux_install.html#linux-installation)
 * Numpy 1.8.2
-
+* SciPy 0.13.3
+* Matplotlib 1.3.1
 
 ### To run
 
