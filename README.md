@@ -6,7 +6,7 @@ This is an implementation of a video stabilization system using ORB descriptor. 
 
 The program was written in Python. The libraries used are:
 
-* OpenCV 3.1
+* OpenCV 3.1 (Use these instructions: http://docs.opencv.org/2.4/doc/tutorials/introduction/linux_install/linux_install.html#linux-installation)
 * Numpy 1.8.2
 
 
