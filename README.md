@@ -1,8 +1,8 @@
-## Introducción
+### Introducción
 
 This is an implementation of a video stabilization system using ORB descriptor. The input of the program is a video, and it outputs the stabilized video in the same folder. 
 
-## Requirements
+### Requirements
 
 The program was written in Python. The libraries used are:
 
@@ -10,7 +10,7 @@ The program was written in Python. The libraries used are:
 * Numpy 1.8.2
 
 
-## To run
+### To run
 
 to run the program simply use:
 
