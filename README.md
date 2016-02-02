@@ -1,29 +1,28 @@
-# Introducción
+## Introducción
 
-Ésta es la implementación del sistema de estabilización de video mediante el 
-descriptor ORB. El programa recibe un video, y entrega el video estabilizado en
-la misma carpeta.
+This is an implementation of a video stabilization system using ORB descriptor. The input of the program is a video, and it outputs the stabilized video in the same folder. 
 
-# Requerimientos
-El programa se debe ejecutar usando Python2.7. Las librerías utilizadas son:
+## Requirements
 
-* OpenCV 3.0
+The program was written in Python. The libraries used are:
+
+* OpenCV 3.1
 * Numpy 1.8.2
 
-# Ejecución
-Para correr el programa, simplmente ejecutar:
 
-python2.7 videoStab.py
+## To run
 
-Los parámetros del programa se deben cambiar manualmente en videoStab.py
+to run the program simply use:
 
-* videoInPath:  dirección del video a estabilizar
-* MATCH_THRES:  umbral de distacia de los calces
-* RANSAC_THRES: umbral de RANSAC
-* BORDER_CUT:   corte de bordes en el video estabilizado
-* FILT:         tipo de filtro (square o gauss)
-* FILT_WIDTH:   ancho del filtro
-* FILT_SIGMA:   varianza del filtro gaussiano
-* FAST:         Si True usa la versión rápida del algoritmo 
+python videoStab.py [video]
 
-Más información leer el informe.
+Parameters must be changed manually in videoStap.py
+
+* videoInPath:  path of the unstabilized video (optional)
+* MATCH_THRES:  Matches distance threshold
+* RANSAC_THRES: RANSAC threshold
+* BORDER_CUT:   Number of pixel to crop in output video 
+* FILT:         filter type (square or Gauss)
+* FILT_WIDTH:   filter width
+* FILT_SIGMA:   filter variance (only in Gaussian filter)
+* FAST:         If true use the fast version of the algorithm
