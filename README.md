@@ -1,4 +1,4 @@
-### Introducción
+### Introduction
 
 This is an implementation of a video stabilization system using ORB descriptor. The input of the program is a video, and it outputs the stabilized video in the same folder. 
 
