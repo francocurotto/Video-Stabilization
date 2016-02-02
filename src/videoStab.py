@@ -15,6 +15,13 @@ start_time = time.time()
 
 # video path
 videoInPath = "../Videos/patio.mp4"
+if len(sys.argv) > 1:
+    try:
+        videoInPath = sys.argv[1]
+    except:
+        print "Error at loading video"
+        sys.exit()
+        
 videoInName, videoExt = os.path.splitext(videoInPath)
 videoBaseName = os.path.basename(videoInName)
 
@@ -39,7 +46,7 @@ elif FILT == "gauss":
     filt = np.exp(-np.square(filtx) / (2*FILT_SIGMA))
     filt =  1/(np.sum(filt)) * filt
     suffix = "_MT_" + str(MATCH_THRES) + "_RT_" + str(RANSAC_THRES) + "_FILT_" + FILT + "_FW_" + str(FILT_WIDTH) + "_SG_" + str(FILT_SIGMA) + "_FAST_" + str(FAST)
-videoOutPath = videoInName + "_res_" + suffix + videoExt
+videoOutPath = videoInName + "_res" + suffix + videoExt
 
 # get video array
 videoArr = getVideoArray(videoInPath)
