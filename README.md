@@ -27,3 +27,7 @@ Parameters must be changed manually in videoStap.py
 * FILT_WIDTH:   filter width
 * FILT_SIGMA:   filter variance (only in Gaussian filter)
 * FAST:         If true use the fast version of the algorithm
+
+## Refecences
+
+[1] Xu, Jie, et al. "Fast feature-based video stabilization without accumulative global motion estimation." IEEE Transactions on Consumer Electronics 58.3 (2012). [https://ieeexplore.ieee.org/document/6311347/?arnumber=6311347]
